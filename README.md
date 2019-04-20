@@ -38,7 +38,7 @@ it('double done', function(done){
 });
 ```
 
-```
+```sh
 npm install mocha
 mkdir test
 $EDITOR test/test.js 
