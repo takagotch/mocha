@@ -44,10 +44,27 @@ mkdir test
 $EDITOR test/test.js 
 ./node_modules/mocha/bin/mocha
 npm test
+
+cd /path/to/mocha
+npm install
+npm test
+
 ```
 
 
-```
+```js
+mocha.setup('tdd');
+
+mocha.setup({
+  ui: 'tdd'
+});
+
+mocha.setup({
+  ui: 'tdd',
+  ignoreLeaks: true,
+  asyncOnly: true
+});
+
 
 ```
 
